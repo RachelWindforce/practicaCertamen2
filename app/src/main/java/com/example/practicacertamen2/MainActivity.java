@@ -59,4 +59,17 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void EliminarEmpleado (View view){
+        //tomo lo que necesito que es en este caso el spinner porque quiero seleccionarllos desde aqui para eliminarlos
+        String Empleado = (String) combobox.getSelectedItem();
+
+        if (Empleado == null){
+            Toast.makeText(this, "Selecciona el empleado que desee eliminar", Toast.LENGTH_SHORT).show();
+        }else{
+            lista.remove(Empleado);
+            adaptador.notifyDataSetChanged();
+        }
+
+    }
+
 }
