@@ -57,6 +57,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#EEC31010"
+            android:onClick="AgregarEmpleado"
             android:text="Agregar empleado"
             android:textColor="#FFFFFF" />
 
